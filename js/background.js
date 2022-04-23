@@ -1,9 +1,11 @@
-const images = ["강아지 캐릭터.jpg","노랑전구.jpg"];
+const images = ["배.png","카누.jpeg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImge = document.createElement("img");
+const bgImage = document.createElement("img");
 
-bgImge.src = `img/${chosenImage}`;
+bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImge);
+document.body.appendChild(bgImage);
+const h2 = document.querySelector("#body")
+document.body.insertBefore(bgImage, h2);

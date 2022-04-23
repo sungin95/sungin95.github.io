@@ -1,4 +1,15 @@
-
+body {
+  position: fixed;
+}
 .hidden {
   display: none;
+}
+img {
+  position: absolute;
+ 
+  height: 100vh;
+  object-fit: contain;
+}
+#body {
+  position: relative;
 }
